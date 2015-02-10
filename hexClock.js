@@ -14,7 +14,14 @@ var counter = function() {
   seconds = "0" + seconds;
 }
  
-  $("span").text(hours + ":" + minutes + ":" + seconds);
+  var colorCode = "#"+ hours + "" + minutes + "" + seconds;
+  
+  $("body")
+    .css("background-color", colorCode);
+  
+  $("span")
+    .text("#"+ hours + "" + minutes + "" + seconds)
+    .css("background-color", colorCode);
   
 }
 
